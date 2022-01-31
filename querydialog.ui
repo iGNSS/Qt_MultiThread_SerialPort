@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QueryDialog</class>
+ <widget class="QDialog" name="QueryDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>342</width>
+    <height>416</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>状态切换</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_12">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>导航状态</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QComboBox" name="comboBox">
+          <property name="minimumSize">
+           <size>
+            <width>25</width>
+            <height>0</height>
+           </size>
+          </property>
+          <item>
+           <property name="text">
+            <string>准备</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>自对准</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>传递对准</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>罗经对准</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>自主导航/无阻尼</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>自主导航/水平阻尼</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>自主导航/全阻尼</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>罗经导航</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>组合导航</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>在舰标定</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>组合校准</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="pushButton">
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>发送</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>工作地点</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="0" column="0">
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QComboBox" name="comboBox_2">
+          <item>
+           <property name="text">
+            <string>码头</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>海上</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>发送</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="title">
+      <string>操作方式</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_6">
+      <item row="0" column="0">
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0">
+         <widget class="QComboBox" name="comboBox_3">
+          <item>
+           <property name="text">
+            <string>自动</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>手动</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>发送</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="title">
+      <string>坐标系切换</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_8">
+      <item row="0" column="0">
+       <layout class="QGridLayout" name="gridLayout_7">
+        <item row="0" column="0">
+         <widget class="QComboBox" name="comboBox_4">
+          <item>
+           <property name="text">
+            <string>XYZ</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Y-XZ</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>-X-YZ</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>-YXZ</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>-XY-Z</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>-Y-X-Z</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>X-Y-Z</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>YX-Z</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>XZ-Y</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>YZX</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>-XZY</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>-YZ-X</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>X-ZY</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Y-Z-X</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>-X-Z-Y</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>-Y-ZX</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ZY-X</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Z-X-Y</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Z-YX</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ZXY</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>-ZYX</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>-Z-XY</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>-Z-Y-X</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>-ZX-Y</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="pushButton_4">
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>发送</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QGroupBox" name="groupBox_5">
+     <property name="title">
+      <string>参数查询</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_10">
+      <item row="0" column="0">
+       <layout class="QGridLayout" name="gridLayout_9">
+        <item row="0" column="0">
+         <widget class="QComboBox" name="comboBox_5">
+          <item>
+           <property name="text">
+            <string>经纬度</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>航向</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>速度</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>系统编号</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>在舰位置</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>IP地址</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>陀螺标定参数</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>加速度计标定参数</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>等效零偏</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>系统姿态零位</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>惯组和输出零位</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>杆臂</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>陀螺零偏温补系数</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>加表零位温补系数</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="pushButton_5">
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>发送</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <layout class="QGridLayout" name="gridLayout_11">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="pushButton_6">
+       <property name="text">
+        <string>程序烧写</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="pushButton_7">
+       <property name="text">
+        <string>退出</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
