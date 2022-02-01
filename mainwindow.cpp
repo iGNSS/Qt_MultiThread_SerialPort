@@ -81,20 +81,20 @@ MainWindow::MainWindow(QWidget *parent)
 
     bookOriData = new BookOriDataDialog(this);      //原始数据
     bookOriData->setWindowFlags(flags);
-    //bookOriData->setFixedSize(300,320);
+    
 
     attitudeData = new AttitudeDialog(this);        //姿态零位
 
     attitudeData->setWindowFlags(flags);
-    //attitudeData->setFixedSize(400,180);
+    
 
     shipLoadData = new ShopLoadDialog(this);            //装舰参数
     shipLoadData->setWindowFlags(flags);
-    //shipLoadData->setFixedSize(280,220);
+    
 
     calbratParaData = new CalibratParaDialog(this);     //标定参数
     calbratParaData->setWindowFlags(flags);
-    //calbratParaData->setFixedSize(650,420);
+    
 
     tempCompenCoeffData = new TempCompenCoeffDialog(this);     //温补系数
     tempCompenCoeffData->setWindowFlags(flags);
